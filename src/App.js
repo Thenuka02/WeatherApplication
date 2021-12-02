@@ -3,10 +3,10 @@ import { useState } from 'react';
 import Searchbox from './components/UI/Searchbox';
 
 const posts = [
-    { id: '1', countryName: 'Sri Lanka', temperature: '28°C'},
-    { id: '2', countryName: 'United Kingdom', temperature: '4°C'},
-    { id: '3', countryName: 'United States', temperature: '8°C' },
-    { id: '4', countryName: 'Australia',temperature: '21°C' },
+    { id: '1', countryName: 'Sri Lanka', temperature: '28°C', time: 'Thursday 16.00'  },
+    { id: '2', countryName: 'United Kingdom', temperature: '4°C',  time: 'Thursday 16.00' },
+    { id: '3', countryName: 'United States', temperature: '8°C',  time: 'Thursday 16.00'  },
+    { id: '4', countryName: 'Australia',temperature: '21°C', time: 'Thursday 16.00'  },
 ];
 
 const filterPosts = (posts, query) => {
@@ -35,7 +35,7 @@ function App() {
       />
       <ul>
         {filteredPosts.map((post) => (
-          <ul key={post.id}>{post.countryName}, {post.temperature}</ul>
+          <ul key={post.id}>{post.countryName}, {post.temperature}, {post.time}</ul>
             ))}
       </ul>
     </div>

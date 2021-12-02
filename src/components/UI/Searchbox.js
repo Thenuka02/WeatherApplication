@@ -2,7 +2,8 @@ import React from 'react';
 import'./Searchbox.css'
 
 const Searchbox = ({ searchQuery, setSearchQuery}) => (
-    <form action="/" method="get">
+    <div className="main">     
+     <form action="/" method="get">
       <div className="searchInputs">
         <input
             value={searchQuery}
@@ -17,10 +18,8 @@ const Searchbox = ({ searchQuery, setSearchQuery}) => (
         Search</button>
         </div>
         </div>
-      
     </form>
+    </div>
 );
-
-
 
 export default Searchbox;
