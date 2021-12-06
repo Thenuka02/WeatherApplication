@@ -1,6 +1,8 @@
 import './App.css';
 import { useState } from 'react';
 import Searchbox from './components/UI/Searchbox';
+import AvailableCountry from './components/AvailableCountry';
+
 
 const posts = [
     { id: '1', countryName: 'Sri Lanka', temperature: '28°C', time: 'Thursday 16.00'  },
