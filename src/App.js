@@ -11,17 +11,19 @@ const posts = [
     { id: '4', countryName: 'Australia',temperature: '21°C', time: 'Thursday 16.00'  },
 ];
 
-const filterPosts = (posts, query) => {
-    if (!query) {
-        return posts;
-    }
+// const filterPosts = (posts, query) => {
+//     if (!query) {
+//         return posts;
+//     }
 
-    return posts.filter((post) => {
-        const postName = post.countryName.toLowerCase();
-        return postName.includes(query);
+//     return posts.filter((post) => {
+//         const postName = post.countryName.toLowerCase();
+//         return postName.includes(query);
         
-    });
-};
+//     });
+// };
+
+const fetchData = async (location) => {}
 
 function App() {
   const { search } = window.location;
@@ -44,4 +46,5 @@ function App() {
   );
 }
 
+const fetchData = async (location) => {}
 export default App;
